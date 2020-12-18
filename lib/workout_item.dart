@@ -8,11 +8,12 @@ class WorkoutItem extends StatelessWidget {
   WorkoutItem(this.id, this.title, this.color);
 
   void selectedWorkout(BuildContext ctx) {
-    Navigator.of(ctx).pushNamed('/exercises_screen',
+    Navigator.of(ctx).pushNamed(ExercisesScreen.routeName,
         arguments: {
           'id': id, 
-          'title': title, 
-          'color': color});
+        'title': title, 
+        }
+        );
   }
 
   @override

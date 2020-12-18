@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:workout_app/models/workout.dart';
 
 class ExercisesScreen extends StatelessWidget {
+  static const routeName ='/exercises_screen';
   // final String workoutId;
   // final String workoutTitle;
 
@@ -9,9 +10,9 @@ class ExercisesScreen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    final routeArgs=ModalRoute.of(context).settings.arguments as Map<String, String>;
+    final routeArgs = ModalRoute.of(context).settings.arguments as Map<String,String>;
     final workoutId = routeArgs['id'];
-    final workoutTitle = routeArgs['workoutTitle'];
+    final workoutTitle = routeArgs['title'];
     return Scaffold(
       appBar: AppBar(title: Text(workoutTitle)),
       body: Center(

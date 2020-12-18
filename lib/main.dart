@@ -22,8 +22,11 @@ class MyApp extends StatelessWidget {
           title: TextStyle(fontSize: 20, fontFamily: 'RobotoCondensed')
         )
       ),
-      home: WorkoutsScreen(),
-      routes: {'/exercises_screen':(ctx)=>ExercisesScreen()},
+      //home: WorkoutsScreen(),
+      initialRoute: '/',
+      routes: {
+        '/':(ctx)=> WorkoutsScreen(),
+        '/exercises_screen':(ctx)=>ExercisesScreen()},
     );
   }
 }
