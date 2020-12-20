@@ -3,16 +3,19 @@ import '../screens/exercise_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class ExerciseItem extends StatelessWidget {
+  final String id;
   final String title;
   final String imageUrl;
-  ExerciseItem({@required this.imageUrl, @required this.title});
+  ExerciseItem(
+      {@required this.imageUrl, @required this.title, @required this.id});
   void selectedExercise(BuildContext context) {
-    Navigator.pushNamed(context, ExerciseDetailScreen.routeName);
+    Navigator.pushNamed(context, ExerciseDetailScreen.routeName,arguments: id);
   }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
-        onTap:() => selectedExercise(context),
+        onTap: () => selectedExercise(context),
         child: Card(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),

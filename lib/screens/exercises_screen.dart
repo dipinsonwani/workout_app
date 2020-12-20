@@ -24,7 +24,11 @@ class ExercisesScreen extends StatelessWidget {
         appBar: AppBar(title: Text(workoutTitle)),
         body: ListView.builder(
           itemBuilder: (ctx, index) {
-            return ExerciseItem(imageUrl: categoryExercise[index].imageUrl, title: categoryExercise[index].title);
+            return ExerciseItem(
+              imageUrl: categoryExercise[index].imageUrl,
+              title: categoryExercise[index].title,
+              id: categoryExercise[index].id,
+            );
           },
           itemCount: categoryExercise.length,
         ));
