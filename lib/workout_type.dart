@@ -21,7 +21,7 @@ const List<Exercise> EXERCISE_DATA = const [
   Exercise(
     id: 'e1',
     categories: ['c1'],
-    imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mensjournal.com%2Fhealth-fitness%2F10-different-ways-do-curl%2F&psig=AOvVaw1aeHpYBsU1TEvSxbI09P8S&ust=1608380267506000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJC3-MrB1-0CFQAAAAAdAAAAABAD',
+    imageUrl: 'https://www.mensjournal.com/wp-content/uploads/mf/_main_zottmancurl_0.jpg?quality=86&amp;strip=all&amp;w=700&iswp=1',
     title: 'Biceps Curl',
     steps: ['Start standing with a dumbbell in each hand. Your elbows should rest at your sides and your forearms should extend out in front of your body.',
     'Bring the dumbbells all the way up to your shoulders by bending your elbows. Once at the top, hold for a second by squeezing the muscle.',
@@ -29,7 +29,7 @@ const List<Exercise> EXERCISE_DATA = const [
   Exercise(
     id: 'e2',
     categories: ['c1'],
-    imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mensjournal.com%2Fhealth-fitness%2F10-different-ways-do-curl%2F&psig=AOvVaw1aeHpYBsU1TEvSxbI09P8S&ust=1608380267506000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJC3-MrB1-0CFQAAAAAdAAAAABAD',
+    imageUrl: 'https://www.mensjournal.com/wp-content/uploads/mf/_main_zottmancurl_0.jpg?quality=86&amp;strip=all&amp;w=700&iswp=1',
     title: 'Concentration Curls',
     steps: ['Start standing with a dumbbell in each hand. Your elbows should rest at your sides and your forearms should extend out in front of your body.',
     'Bring the dumbbells all the way up to your shoulders by bending your elbows. Once at the top, hold for a second by squeezing the muscle.',
@@ -37,7 +37,7 @@ const List<Exercise> EXERCISE_DATA = const [
   Exercise(
     id: 'e3',
     categories: ['c2'],
-    imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mensjournal.com%2Fhealth-fitness%2F10-different-ways-do-curl%2F&psig=AOvVaw1aeHpYBsU1TEvSxbI09P8S&ust=1608380267506000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJC3-MrB1-0CFQAAAAAdAAAAABAD',
+    imageUrl: 'https://www.mensjournal.com/wp-content/uploads/mf/_main_zottmancurl_0.jpg?quality=86&amp;strip=all&amp;w=700&iswp=1',
     title: 'Triceps Dips',
     steps: ['Start standing with a dumbbell in each hand. Your elbows should rest at your sides and your forearms should extend out in front of your body.',
     'Bring the dumbbells all the way up to your shoulders by bending your elbows. Once at the top, hold for a second by squeezing the muscle.',
@@ -45,7 +45,7 @@ const List<Exercise> EXERCISE_DATA = const [
   Exercise(
     id: 'e4',
     categories: ['c2'],
-    imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mensjournal.com%2Fhealth-fitness%2F10-different-ways-do-curl%2F&psig=AOvVaw1aeHpYBsU1TEvSxbI09P8S&ust=1608380267506000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJC3-MrB1-0CFQAAAAAdAAAAABAD',
+    imageUrl: 'https://www.mensjournal.com/wp-content/uploads/mf/_main_zottmancurl_0.jpg?quality=86&amp;strip=all&amp;w=700&iswp=1',
     title: 'Triceps PushDown',
     steps: ['Start standing with a dumbbell in each hand. Your elbows should rest at your sides and your forearms should extend out in front of your body.',
     'Bring the dumbbells all the way up to your shoulders by bending your elbows. Once at the top, hold for a second by squeezing the muscle.',
@@ -53,7 +53,7 @@ const List<Exercise> EXERCISE_DATA = const [
   Exercise(
     id: 'e4',
     categories: ['c3'],
-    imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mensjournal.com%2Fhealth-fitness%2F10-different-ways-do-curl%2F&psig=AOvVaw1aeHpYBsU1TEvSxbI09P8S&ust=1608380267506000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJC3-MrB1-0CFQAAAAAdAAAAABAD',
+    imageUrl: 'https://www.mensjournal.com/wp-content/uploads/mf/_main_zottmancurl_0.jpg?quality=86&amp;strip=all&amp;w=700&iswp=1',
     title: 'Back Lat Pulldown',
     steps: ['Start standing with a dumbbell in each hand. Your elbows should rest at your sides and your forearms should extend out in front of your body.',
     'Bring the dumbbells all the way up to your shoulders by bending your elbows. Once at the top, hold for a second by squeezing the muscle.',
@@ -61,7 +61,7 @@ const List<Exercise> EXERCISE_DATA = const [
   Exercise(
     id: 'e5',
     categories: ['c4'],
-    imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mensjournal.com%2Fhealth-fitness%2F10-different-ways-do-curl%2F&psig=AOvVaw1aeHpYBsU1TEvSxbI09P8S&ust=1608380267506000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJC3-MrB1-0CFQAAAAAdAAAAABAD',
+    imageUrl: 'https://www.mensjournal.com/wp-content/uploads/mf/_main_zottmancurl_0.jpg?quality=86&amp;strip=all&amp;w=700&iswp=1',
     title: 'Legs Squats',
     steps: ['Start standing with a dumbbell in each hand. Your elbows should rest at your sides and your forearms should extend out in front of your body.',
     'Bring the dumbbells all the way up to your shoulders by bending your elbows. Once at the top, hold for a second by squeezing the muscle.',

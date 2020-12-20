@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:workout_app/models/workout.dart';
-import './workout_type.dart';
+import 'package:workout_app/widgets/exercise_item.dart';
+import '../workout_type.dart';
 
 class ExercisesScreen extends StatelessWidget {
   static const routeName = '/exercises_screen';
@@ -23,7 +24,7 @@ class ExercisesScreen extends StatelessWidget {
         appBar: AppBar(title: Text(workoutTitle)),
         body: ListView.builder(
           itemBuilder: (ctx, index) {
-            return Text(categoryExercise[index].title);
+            return ExerciseItem(imageUrl: categoryExercise[index].imageUrl, title: categoryExercise[index].title);
           },
           itemCount: categoryExercise.length,
         ));
