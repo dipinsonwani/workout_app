@@ -1,17 +1,18 @@
-import 'dart:html';
 import 'dart:ui';
-
+import '../screens/exercise_detail_screen.dart';
 import 'package:flutter/material.dart';
 
 class ExerciseItem extends StatelessWidget {
   final String title;
   final String imageUrl;
   ExerciseItem({@required this.imageUrl, @required this.title});
-  void selectedExercise() {}
+  void selectedExercise(BuildContext context) {
+    Navigator.pushNamed(context, ExerciseDetailScreen.routeName);
+  }
   @override
   Widget build(BuildContext context) {
     return InkWell(
-        onTap: selectedExercise,
+        onTap:() => selectedExercise(context),
         child: Card(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
@@ -33,13 +34,23 @@ class ExerciseItem extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   ),
-                  Text(
-                    "title",
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 26, 
+                  Positioned(
+                    bottom: 20,
+                    right: 10,
+                    child: Container(
+                      //height: 200,
+                      width: 220,
+                      color: Colors.black54,
+                      child: Text(
+                        title,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 26,
+                        ),
+                        softWrap: true,
+                        overflow: TextOverflow.fade,
+                      ),
                     ),
-                    softWrap: true,
                   )
                 ],
               )

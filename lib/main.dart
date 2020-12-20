@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/exercise_detail_screen.dart';
 import 'package:workout_app/screens/workouts_screen.dart';
 import 'screens/exercises_screen.dart';
 void main() {
@@ -26,7 +27,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/':(ctx)=> WorkoutsScreen(),
-        '/exercises_screen':(ctx)=>ExercisesScreen()},
+        '/exercises_screen':(ctx)=>ExercisesScreen(),
+        ExerciseDetailScreen.routeName: (ctx)=> ExerciseDetailScreen()
+        },
+        
     );
   }
 }
