@@ -4,20 +4,21 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class MainDrawer extends StatelessWidget {
-  Widget buildListTile(String text, IconData icon){
+  Widget buildListTile(String text, IconData icon, Function tapHandler) {
     return ListTile(
-          leading: Icon(icon, size: 26),
-          title: Text(
-            text,
-            style: TextStyle(
-              fontFamily: "RobotoCondensed",
-              fontSize:24,
-              fontWeight:FontWeight.bold,
-            ),
-          ),
-          onTap: (){},
-        );
+      leading: Icon(icon, size: 26),
+      title: Text(
+        text,
+        style: TextStyle(
+          fontFamily: "RobotoCondensed",
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      onTap: tapHandler,
+    );
   }
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -39,8 +40,18 @@ class MainDrawer extends StatelessWidget {
         SizedBox(
           height: 20,
         ),
-        buildListTile('Workouts', Icons.fitness_center),
-        buildListTile('Settings', Icons.settings)
+        buildListTile(
+          'Workouts', 
+        Icons.fitness_center, 
+        () {
+          Navigator.of(context).pushNamed('/');
+        }),
+        buildListTile(
+          'Settings', 
+          Icons.settings,
+          (){
+            Navigator.of(context).pushNamed('/settings');
+          })
       ]),
     );
   }
