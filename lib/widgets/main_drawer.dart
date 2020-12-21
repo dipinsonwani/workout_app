@@ -44,13 +44,13 @@ class MainDrawer extends StatelessWidget {
           'Workouts', 
         Icons.fitness_center, 
         () {
-          Navigator.of(context).pushNamed('/');
+          Navigator.of(context).pushReplacementNamed('/');
         }),
         buildListTile(
           'Settings', 
           Icons.settings,
           (){
-            Navigator.of(context).pushNamed('/settings');
+            Navigator.of(context).pushReplacementNamed('/settings');
           })
       ]),
     );
